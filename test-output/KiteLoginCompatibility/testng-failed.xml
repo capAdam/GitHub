@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [KiteLoginCompatibility]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test1_firefox(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="Module1_Login_Test.KiteLoginCompatibility">
+        <methods>
+          <include name="logintoApp"/>
+          <include name="LogoutfromApp"/>
+          <include name="closeBrowser"/>
+          <include name="verifyuserID"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Module1_Login_Test.KiteLoginCompatibility -->
+    </classes>
+  </test> <!-- Test1_firefox(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1_chrome(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <classes>
+      <class name="Module1_Login_Test.KiteLoginCompatibility">
+        <methods>
+          <include name="logintoApp"/>
+          <include name="LogoutfromApp"/>
+          <include name="closeBrowser"/>
+          <include name="verifyuserID"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- Module1_Login_Test.KiteLoginCompatibility -->
+    </classes>
+  </test> <!-- Test1_chrome(failed) -->
+</suite> <!-- Failed suite [KiteLoginCompatibility] -->
